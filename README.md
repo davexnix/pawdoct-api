@@ -10,10 +10,8 @@ API Flask untuk mendeteksi penyakit hewan berdasarkan gejala menggunakan model M
 
 ```bash
 ├── app.py                 # Flask API untuk prediksi penyakit
-├── data/
-│   └── dataset.csv        # Dataset gejala dan label penyakit
-├── model/
-│   └── pawdoct.joblib     # Model hasil training
+├── dataset.csv            # Dataset gejala dan label penyakit
+├── pawdoct.joblib         # Model hasil training
 ├── train_model.py         # Script training ML
 ├── requirements.txt       # Daftar dependensi Python
 ├── README.md              # Dokumentasi proyek
@@ -51,9 +49,9 @@ python train_model.py
 
 Script ini akan:
 
-* Membaca `data/dataset.csv`
+* Membaca `dataset.csv`
 * Melatih model Random Forest
-* Menyimpan model ke `model/pawdoct.joblib`
+* Menyimpan model ke `pawdoct.joblib`
 * Menampilkan akurasi, klasifikasi, dan feature importance
 
 ## 🚀 Menjalankan API
