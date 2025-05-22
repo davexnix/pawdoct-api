@@ -10,8 +10,8 @@ from sklearn.metrics import classification_report, accuracy_score, confusion_mat
 pd.set_option("future.no_silent_downcasting", True)
 
 # Definisikan dataset dan save model
-dataset = os.path.join(".", "data", "dataset.csv")
-savemodel = os.path.join(".", "model", "pawdoct.joblib")
+dataset = os.path.join(".", "dataset.csv")
+savemodel = os.path.join(".", "pawdoct.joblib")
 
 # Load dataset
 df = pd.read_csv(dataset)
