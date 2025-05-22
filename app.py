@@ -7,7 +7,7 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 
 # Load model
-mpath = os.path.join(".", "model", "pawdoct.joblib")
+mpath = os.path.join(".", "pawdoct.joblib")
 model = joblib.load(mpath)
 
 # Fitur yang digunakan (harus sama dengan saat training)
